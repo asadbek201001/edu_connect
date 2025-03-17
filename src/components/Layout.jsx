@@ -1,8 +1,7 @@
 import { useNavigate } from "react-router";
 import { styled } from "styled-components";
 
-
-import Header from "../components/adminComponents/Header";
+import Header from "./Header";
 import SideBar from "./SideBar";
 
 const Wrapper = styled.div`
@@ -14,6 +13,7 @@ const Wrapper = styled.div`
 const MainWrapper = styled.main`
   width: calc(100% - 300px);
   height: calc(100vh - 50px);
+  border: 3px solid green;
 `;
 const PageWrapper = styled.main``;
 
@@ -52,14 +52,9 @@ const Layout = ({ userRole, children }) => {
       <MainWrapper>
         <Header />
         <PageWrapper className="content">{children}</PageWrapper>
-
       </MainWrapper>
     </Wrapper>
   );
 };
 
 export default Layout;
-
-
-
-

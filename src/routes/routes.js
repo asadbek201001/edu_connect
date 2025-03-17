@@ -7,7 +7,6 @@ const ROUTES = {
   PARENT_DASHBOARD: "/parent",
   ATTENDANCE_REPORTS: "/attendanceReports",
   MANAGE_STUDENTS: "/manageStudents",
-  SETTINGS: "/settings",
   PARENT: "/parent",
 };
 
